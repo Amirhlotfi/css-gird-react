@@ -1,0 +1,32 @@
+#app{
+  max-width: 960px;
+  margin: auto
+}
+
+p{
+  font-size: 24px;
+}
+
+.page-header{
+  padding: 1rem;
+}
+
+.box{
+  padding: 1rem;
+  border-style: dashed;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+}
+.container div:nth-child(n+1) {
+  grid-column-end: span 3;
+}
+
+.container div:nth-last-child(1):nth-child(odd) {
+  grid-column-end: span 4;
+  grid-column-start: 2;
+}
+
