@@ -1,14 +1,10 @@
 #app{
-  max-width: 960px;
+  max-width: 1024px;
   margin: auto
 }
 
 p{
   font-size: 24px;
-}
-
-.page-header{
-  padding: 1rem;
 }
 
 .box{
@@ -18,15 +14,22 @@ p{
 
 .container{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   grid-gap: 0.5rem;
 }
-.container div:nth-child(n+1) {
-  grid-column-end: span 3;
-}
 
-.container div:nth-last-child(1):nth-child(odd) {
-  grid-column-end: span 4;
-  grid-column-start: 2;
+@media (min-width: 767px){
+  .container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5rem;
+  }
+  .container div:nth-child(n+1) {
+    grid-column-end: span 3;
+  }
+  
+  .container div:nth-last-child(1):nth-child(odd) {
+    grid-column-end: span 4;
+    grid-column-start: 2;
+  }
 }
-

@@ -20,7 +20,7 @@ export function App() {
         <Box header={header("B")} content={content}/>
         <Box header={header("C")} content={content}/>
         <Box header={header("D")} content={content}/>
-        <Box header={header("D")} content={content}/>
+        <Box header={header("E")} content={content}/>
       </div>
     </>
   );
